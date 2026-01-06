@@ -1,0 +1,18 @@
+nav {
+    padding: 15px 10px;
+    background-color: limegreen;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    margin: 15px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}

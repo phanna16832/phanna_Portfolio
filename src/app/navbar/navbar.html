@@ -1,0 +1,15 @@
+<nav>
+  <ul>
+    @for (navitem of navItems; track $index) {
+      <li>
+        <a [routerLink]="navitem.route">{{ navitem.label }}</a>
+      </li>
+    }
+    
+  </ul>
+  <div>
+    <ul>
+      <li>plan</li>
+    </ul>
+  </div>
+</nav>
