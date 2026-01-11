@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class Calculator {
   price ="";
-  result = 0;
+  result :number = 0;
 
   rates = [6.00, 6.10, 6.20, 6.25, 6.30, 6.40, 6.45, 6.50, 6.55, 6.60, 6.70, 6.75];
   rate = this.rates[0]
@@ -23,8 +23,9 @@ export class Calculator {
     this.result = 0;
     return;
   }
+  const value = priceValue / rateValue;
 
-  this.result = priceValue / rateValue;
+  this.result = Number(value.toFixed(2));   // round result only
 }
 
 }
