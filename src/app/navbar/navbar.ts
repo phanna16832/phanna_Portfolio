@@ -14,5 +14,6 @@ export class Navbar {
   { label: 'About', route: '/about' }, 
   { label: 'Projects', route: '/projects' },
   { label: 'Contact', route: '/contact' },
+  { label: 'Calculator', route: '/calculator' },
 ];
 }

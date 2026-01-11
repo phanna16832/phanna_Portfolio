@@ -1,0 +1,13 @@
+<div>
+<input type="number" placeholder="price" [(ngModel)]="price"/> <br>
+
+<select [(ngModel)]="rate">
+  @for (r of rates; track $index) {
+    <option [value]="r">{{ r }}</option>
+  }
+</select><br>
+
+<button (click)="convertPriceFunction()">Convert</button><br>
+
+<span>{{ result }}</span>
+</div>
